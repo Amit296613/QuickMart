@@ -1,0 +1,1984 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@48,400,0,0" />
+    <link rel="icon" type="image/x-icon" href="/images/logo-removebg.png">
+    <script src="index.js" defer></script>
+    <title>QuickMart</title>
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <a href="index.html"><img src="images/logo-removebg.png" alt=""><span>QuickMart</span></a>
+        </div>
+        
+        <div class="search">
+            <button class="btn-categories">All <i class="fa-solid fa-angle-down"></i></button>
+            <input type="text" name="" id="" placeholder="Search Products..." class="search-box">
+            <button type="submit" class="search-btn"><i class="fa-solid fa-search"></i></button>
+        </div>
+    
+        <div class="icons">
+            <a href="Form.html"><i class="fa-solid fa-user " ></i></a>
+            <div class="nav-return">
+                <p><span>Return</span></p>
+                <p class="nav-orders">& Orders</p>
+            </div>
+            <a href="#"><i class="fa-solid fa-cart-shopping"></i></a>
+        </div>
+    </header>
+
+    <section class="section-categories container" id="categories">
+        <div class="menu-bar">
+            <a href="#"><i class="fa-solid fa-bars"></i> <span>All</span></a>
+        </div>
+        <div class="shop-category">
+            <a href="shop-by-category.html">
+                <p><span>Shop By</span></p>
+                <p class="shop-all">Category</p>
+            </a>
+        </div>
+        <div class="categories">
+            <a href="#">Fresh</a>
+            <a href="#">Today's Deals</a>
+            <a href="#">Keep Shopping for</a>
+            <a href="#">Video Games</a>
+            <a href="#">Customer Service</a>
+            <a href="#">Buy Again</a>
+            <a href="#">Mobile</a>
+            <a href="#">Books</a>
+            <a href="#">Electronics</a>
+            <a href="#">Sports & Outdoors</a>
+            <a href="#">Baby & Kids</a>
+        </div>
+    </section>
+
+    <div class="menu-bar-1">
+        <div class="user-profile" onclick="openNewPage('Form.html')">
+            <a href="#"><i class="fa-solid fa-user"></i> <span>Hello, Sign In</span></a>
+        </div>
+        <div class="exit-menu">
+            <a href="#"><i class="fa-solid fa-xmark"></i></a>
+        </div>
+
+        <div class="menu-bar-box">
+            <div class="sh-by-category">
+                <h3>Shop by Category</h3>
+                <div class="col" id="col1">
+                    <a href="#">Mobiles, Computers </a><i class="fa-solid fa-angle-right"></i>
+                </div>
+                <div class="col" id="col2">
+                    <a href="#">TV, Appliances, Electronics </a><i class="fa-solid fa-angle-right"></i>
+                </div>
+                <div class="col" id="col3">
+                    <a href="#">Men's Fashion </a><i class="fa-solid fa-angle-right"></i>
+                </div>
+                <div class="col" id="col4">
+                    <a href="#">Women's Fashion </a><i class="fa-solid fa-angle-right"></i>
+                </div>
+                <div class="col" id="col5">
+                    <a href="#">Home, Kitchen, Pets </a><i class="fa-solid fa-angle-right"></i>
+                </div>
+                <div class="col" id="col6">
+                    <a href="#">Beauty, Health, Grocery </a><i class="fa-solid fa-angle-right"></i>
+                </div>
+                <div class="col" id="col7">
+                    <a href="#">Sports, Fitness, Bags, Luggage </a><i class="fa-solid fa-angle-right"></i>
+                </div>
+                <div class="col" id="col8">
+                    <a href="#">Toys, Baby Products, Kids' Fashion </a><i class="fa-solid fa-angle-right"></i>
+                </div>
+                <div class="col" id="col9">
+                    <a href="#">Car & Motorbike </a><i class="fa-solid fa-angle-right"></i>
+                </div>
+                <div class="col" id="col10">
+                    <a href="#">Books </a><i class="fa-solid fa-angle-right"></i>
+                </div>
+                <div class="col" id="col11">
+                    <a href="#">Video Games </a><i class="fa-solid fa-angle-right"></i>
+                </div>
+            </div>
+
+            <div class="menu-line-bar">
+                <div class="menu-line"></div>
+            </div>
+
+            <div class="settings">
+                <h3>Help & Settings</h3>
+                <div class="col" onclick="openNewPage('Your-Account.html')">
+                    <a href="#">Your Account </a>
+                </div>
+                <div class="col">
+                    <a href="#">Customer Service</a>
+                </div>
+                <div class="col" onclick="openNewPage('Form.html')">
+                    <a href="#">Sign In </a>
+                </div>
+            </div>
+
+            <div class="menu-line-bar">
+                <div class="menu-line"></div>
+            </div>
+
+            <div class="Contact-with">
+                <h3>Connect with Us</h3>
+                <div class="menu-social-icons">
+                    <div class="col1">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                    </div>
+                    <div class="col1">
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                    </div>
+                    <div class="col1">
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+         <!-- -----------Mobiles, Computers--------- -->
+        <div class="main-menu" id="main-menu1">
+            <div class="back-to-menu">
+                <h4><i class="fa-solid fa-arrow-left"></i> Main Menu</h4>
+            </div>
+
+            <div class="menu-line-bar">
+                <div class="menu-line"></div>
+            </div>
+            <div class="heading">
+                <h3>Mobiles, Tablets & More</h3>
+            </div>
+            <div class="menus">
+                <div class="menu-cols" onclick="openNewPage('All-Mobile-Phones.html')">
+                    <a href="#">All Mobile Phones</a>
+                </div>
+                <div class="menu-cols">
+                    <a href="#">All Mobile Accessories</a>
+                </div>
+                <div class="menu-cols">
+                    <a href="#">Cases & Covers</a> 
+                </div>
+                <div class="menu-cols">
+                    <a href="#">Screen Protectors</a>
+                </div>
+                <div class="menu-cols">
+                    <a href="#">Power Banks</a>
+                </div>
+                <div class="menu-cols">
+                    <a href="#">Smart Home</a>
+                </div>
+                <div class="menu-cols">
+                    <a href="#">Software</a>
+                </div>
+                <div class="menu-cols">
+                    <a href="#">Tablets</a>
+                </div>
+                <div class="menu-cols">
+                    <a href="#">Smartphones</a>
+                </div>
+                <div class="menu-cols">
+                    <a href="#">Headphones</a>
+                </div>
+                <div class="menu-cols">
+                    <a href="#">Office Supplies & Stationery</a>
+                </div>
+            </div>
+           
+            <div class="menu-line-bar">
+                <div class="menu-line"></div>
+            </div>
+            <div class="heading">
+                <h3>Computers & Accessories</h3>
+            </div>
+            <div class="menus">
+                <div class="menu-cols">
+                    <a href="#">All Computers & Accessories</a>
+                </div>
+                <div class="menu-cols">
+                    <a href="#">Laptops</a>
+                </div>
+                <div class="menu-cols">
+                    <a href="#">Desktops</a>
+                </div>
+                <div class="menu-cols">
+                    <a href="#">Drives & Storage</a>
+                </div>
+                <div class="menu-cols">
+                    <a href="#">Printers & Ink</a>
+                </div>
+                <div class="menu-cols">
+                    <a href="#">Networking  Devices</a>
+                </div>
+                <div class="menu-cols">
+                    <a href="#">Computers Accessories</a>
+                </div>
+                <div class="menu-cols">
+                    <a href="#">Game Zone</a>
+                </div>
+                <div class="menu-cols">
+                    <a href="#">Monitors</a>
+                </div>
+                <div class="menu-cols">
+                    <a href="#">Components</a>
+                </div>
+                <div class="menu-cols">
+                    <a href="#">All Electronics</a>
+                </div>
+            </div>
+        </div>
+        
+        <!-- -----------TV, Appliances, Electronics--------- -->
+        <div class="main-menu" id="main-menu2">
+            <div class="back-to-menu">
+                <h4><i class="fa-solid fa-arrow-left"></i> Main Menu</h4>
+            </div>
+
+            <div class="menu-line-bar">
+                <div class="menu-line"></div>
+            </div>
+
+            <div class="heading">
+                <h3>TV, Audio & Cameras</h3>
+            </div>
+            <div class="menus">
+                <div class="menu-cols">
+                    <a href="#">Televisions</a>
+                </div>
+
+                <div class="menu-cols">
+                    <a href="#">Home Entertainment Systems</a>
+                </div>
+
+                <div class="menu-cols">
+                    <a href="#">Headphones</a> 
+                </div>
+
+                <div class="menu-cols">
+                    <a href="#">Home Audio & Theater</a>
+                </div>
+
+                <div class="menu-cols">
+                    <a href="#">Cameras</a>
+                </div>
+
+                <div class="menu-cols">
+                    <a href="#">DSLR Cameras</a>
+                </div>
+
+                <div class="menu-cols">
+                    <a href="#">Security Cameras</a>
+                </div>
+
+                <div class="menu-cols">
+                    <a href="#">Camera Accessories</a>
+                </div>
+
+                <div class="menu-cols">
+                    <a href="#">Musical Instruments & Professional Audio</a>
+                </div>
+
+                <div class="menu-cols">
+                    <a href="#">Gamig Consoles</a>
+                </div>
+
+                <div class="menu-cols">
+                    <a href="#">All Electronics</a>
+                </div>
+            </div>
+           
+            <div class="menu-line-bar">
+                <div class="menu-line"></div>
+            </div>
+
+            <div class="heading">
+                <h3>Appliances</h3>
+            </div>
+            <div class="menus">
+                <div class="menu-cols">
+                    <a href="#">Air Conditioners</a>
+                </div>
+                <div class="menu-cols">
+                    <a href="#">Refrigerators</a>
+                </div>
+                <div class="menu-cols">
+                    <a href="#">Washing Machines</a>
+                </div>
+                <div class="menu-cols">
+                    <a href="#">Kitchen & Home Appliances</a>
+                </div>
+                <div class="menu-cols">
+                    <a href="#">Heating & Cooling Appliances</a>
+                </div>
+                <div class="menu-cols">
+                    <a href="#">All Appliances</a>
+                </div>
+            </div>
+        </div>
+        
+    
+        <!-- -----------Men's Fashion--------- -->
+        <div class="main-menu" id="main-menu3">
+            <div class="back-to-menu">
+                <h4><i class="fa-solid fa-arrow-left"></i> Main Menu</h4>
+            </div>
+
+            <div class="menu-line-bar">
+                <div class="menu-line"></div>
+            </div>
+            <div class="heading">
+                <h3>Men's Clothing</h3>
+            </div>
+            <div class="menus">
+                <div class="menu-cols">
+                    <a href="#">Clothing</a>
+                </div>
+
+                <div class="menu-cols">
+                    <a href="#">T-shirt & Polos</a>
+                </div>
+
+                <div class="menu-cols">
+                    <a href="#">Shirts</a> 
+                </div>
+
+                <div class="menu-cols">
+                    <a href="#">Jeans</a>
+                </div>
+
+                <div class="menu-cols">
+                    <a href="#">Innerwear</a>
+                </div>
+            </div>
+           
+            <div class="menu-line-bar">
+                <div class="menu-line"></div>
+            </div>
+            <div class="heading">
+                <h3>Accessories</h3>
+            </div>
+            <div class="menus">
+                <div class="menu-cols">
+                    <a href="#">Watches</a>
+                </div>
+                <div class="menu-cols">
+                    <a href="#">Bug & Luggage</a>
+                </div>
+                <div class="menu-cols">
+                    <a href="#">Sunglasses</a>
+                </div>
+                <div class="menu-cols">
+                    <a href="#">Jewellery</a>
+                </div>
+                <div class="menu-cols">
+                    <a href="#">wallets</a>
+                </div>
+            </div>
+
+            <div class="menu-line-bar">
+                <div class="menu-line"></div>
+            </div>
+            <div class="heading">
+                <h3>Men's Shoes</h3>
+            </div>
+            <div class="menus">
+                <div class="menu-cols">
+                    <a href="#">Shoes</a>
+                </div>
+                <div class="menu-cols">
+                    <a href="#">Sports Shoes</a>
+                </div>
+                <div class="menu-cols">
+                    <a href="#">Formal Shoes</a>
+                </div>
+                <div class="menu-cols">
+                    <a href="#">Casual Shoes</a>
+                </div>
+            </div>
+
+            <div class="menu-line-bar">
+                <div class="menu-line"></div>
+            </div>
+            <div class="heading">
+                <h3>Stores</h3>
+            </div>
+            <div class="menus">
+                <div class="menu-cols">
+                    <a href="#">Sportswear</a>
+                </div>
+                <div class="menu-cols">
+                    <a href="#">The Designer Boutique</a>
+                </div>
+                <div class="menu-cols">
+                    <a href="#">Men's Fashion</a>
+                </div>
+                <div class="menu-cols">
+                    <a href="#">Men's Handlooms</a>
+                </div>
+                <div class="menu-cols">
+                    <a href="#">Fashion Sales & Deals</a>
+                </div>
+            </div>
+        </div>
+        
+        <!-- -----------Women's Fashion--------- -->
+        <div class="main-menu" id="main-menu4">
+            <div class="back-to-menu">
+                <h4><i class="fa-solid fa-arrow-left"></i> Main Menu</h4>
+            </div>
+
+            <div class="menu-line-bar">
+                <div class="menu-line"></div>
+            </div>
+            <div class="heading">
+                <h3>Women's Clothing</h3>
+            </div>
+            <div class="menus">
+                <div class="menu-cols">
+                    <a href="#">Clothing</a>
+                </div>
+                <div class="menu-cols">
+                    <a href="#">Western Wear</a>
+                </div>
+                <div class="menu-cols">
+                    <a href="#">Ethnic Wear</a> 
+                </div>
+                <div class="menu-cols">
+                    <a href="#">Lingerie & Nightwear</a>
+                </div>
+                <div class="menu-cols">
+                    <a href="#">Top Brands</a>
+                </div>
+            </div>
+           
+            <div class="menu-line-bar">
+                <div class="menu-line"></div>
+            </div>
+            <div class="heading">
+                <h3>Accessories</h3>
+            </div>
+            <div class="menus">
+                <div class="menu-cols">
+                    <a href="#">Watches</a>
+                </div>
+                <div class="menu-cols">
+                    <a href="#">Handbags & Clutches</a>
+                </div>
+                <div class="menu-cols">
+                    <a href="#">Gold & Diamond Jewellery</a>
+                </div>
+                <div class="menu-cols">
+                    <a href="#">Fashion & Silver Jewellery</a>
+                </div>
+                <div class="menu-cols">
+                    <a href="#">Sunglasses</a>
+                </div>
+                <div class="menu-cols">
+                    <a href="#">All Appliances</a>
+                </div>
+            </div>
+
+            <div class="menu-line-bar">
+                <div class="menu-line"></div>
+            </div>
+            <div class="heading">
+                <h3>Women's Shoes</h3>
+            </div>
+            <div class="menus">
+                <div class="menu-cols">
+                    <a href="#">Shoes</a>
+                </div>
+                <div class="menu-cols">
+                    <a href="#">Fashion Sandals</a>
+                </div>
+                <div class="menu-cols">
+                    <a href="#">Ballerians</a>
+                </div>
+            </div>
+
+            <div class="menu-line-bar">
+                <div class="menu-line"></div>
+            </div>
+            <div class="heading">
+                <h3>Stores</h3>
+            </div>
+            <div class="menus">
+                <div class="menu-cols">
+                    <a href="#">The Designer Boutique</a>
+                </div>
+                <div class="menu-cols">
+                    <a href="#">Handlooms & Handicraft Store</a>
+                </div>
+                <div class="menu-cols">
+                    <a href="#">Sports wear</a>
+                </div>
+                <div class="menu-cols">
+                    <a href="#">Women's Fashion</a>
+                </div>
+                <div class="menu-cols">
+                    <a href="#">Fashion Sales & Deals</a>
+                </div>
+            </div>
+        </div>
+        
+    
+        <!-- -----------Home, Kitchen, Pets--------- -->
+        <div class="main-menu" id="main-menu5">
+            <div class="back-to-menu">
+                <h4><i class="fa-solid fa-arrow-left"></i> Main Menu</h4>
+            </div>
+
+            <div class="menu-line-bar">
+                <div class="menu-line"></div>
+            </div>
+            <div class="heading">
+                <h3>Home & Kitchen</h3>
+            </div>
+            <div class="menus">
+                <div class="menu-cols">
+                    <a href="#">Explore Showroom</a>
+                </div>
+                <div class="menu-cols">
+                    <a href="#">Kitchen & Dining</a>
+                </div>
+                <div class="menu-cols">
+                    <a href="#">Kitchen Storage & Containers</a> 
+                </div>
+                <div class="menu-cols">
+                    <a href="#">Furniture</a>
+                </div>
+                <div class="menu-cols">
+                    <a href="#">Fine Art</a>
+                </div>
+                <div class="menu-cols">
+                    <a href="#">Home Furnishing</a>
+                </div>
+                <div class="menu-cols">
+                    <a href="#">Bedroom Linen</a>
+                </div>
+                <div class="menu-cols">
+                    <a href="#">Home Decor</a>
+                </div>
+                <div class="menu-cols">
+                    <a href="#">Garden & Outdoors</a>
+                </div>
+                <div class="menu-cols">
+                    <a href="#">Home Storage</a>
+                </div>
+                <div class="menu-cols">
+                    <a href="#">Indoor Lighting</a>
+                </div>
+                <div class="menu-cols">
+                    <a href="#">Sewing & Craft Supplies</a>
+                </div>
+                <div class="menu-cols">
+                    <a href="#">All Home & Kitchen</a>
+                </div>
+                <div class="menu-cols">
+                    <a href="#">Home & Kitchen Deals</a>
+                </div>
+            </div>
+           
+            <div class="menu-line-bar">
+                <div class="menu-line"></div>
+            </div>
+            <div class="heading">
+                <h3>Pet Supplies</h3>
+            </div>
+            <div class="menus">
+                <div class="menu-cols">
+                    <a href="#">All Pet Supplies</a>
+                </div>
+                <div class="menu-cols">
+                    <a href="#">Dog Supplies</a>
+                </div>
+            </div>
+
+            <div class="menu-line-bar">
+                <div class="menu-line"></div>
+            </div>
+            <div class="heading">
+                <h3>Home, Kitchen, Pets</h3>
+            </div>
+            <div class="menus">
+                <div class="menu-cols">
+                    <a href="#">Refurbished & Open Box</a>
+                </div>
+            </div>
+        </div>
+        
+        <!-- -----------Beauty, Health, Grocery--------- -->
+        <div class="main-menu" id="main-menu6">
+            <div class="back-to-menu">
+                <h4><i class="fa-solid fa-arrow-left"></i> Main Menu</h4>
+            </div>
+
+            <div class="menu-line-bar">
+                <div class="menu-line"></div>
+            </div>
+            <div class="heading">
+                <h3>Beauty & Health</h3>
+            </div>
+            <div class="menus">
+                <div class="menu-cols">
+                    <a href="#">Beauty & Grooming</a>
+                </div>
+                <div class="menu-cols">
+                    <a href="#">Luxury Beauty</a>
+                </div>
+                <div class="menu-cols">
+                    <a href="#">Make-up</a> 
+                </div>
+                <div class="menu-cols">
+                    <a href="#">Health & Personal Care</a>
+                </div>
+                <div class="menu-cols">
+                    <a href="#">Diet & Nutrition</a>
+                </div>
+                <div class="menu-cols">
+                    <a href="#">Personal Care Appliances</a>
+                </div>
+            </div>
+           
+            <div class="menu-line-bar">
+                <div class="menu-line"></div>
+            </div>
+            <div class="heading">
+                <h3>Grocery & Gourmet Foods</h3>
+            </div>
+            <div class="menus">
+                <div class="menu-cols">
+                    <a href="#">All Grocery & Gourmet Foods</a>
+                </div>
+                <div class="menu-cols">
+                    <a href="#">Coffee, Tea & Beverages</a>
+                </div>
+                <div class="menu-cols">
+                    <a href="#">Snack Foods</a>
+                </div>
+            </div>
+        </div>
+        
+        <!-- -----------Sports, Fitness, Bags, Luggage--------- -->
+        <div class="main-menu" id="main-menu7">
+            <div class="back-to-menu">
+                <h4><i class="fa-solid fa-arrow-left"></i> Main Menu</h4>
+            </div>
+
+            <div class="menu-line-bar">
+                <div class="menu-line"></div>
+            </div>
+            <div class="heading">
+                <h3>Sports & Fitness</h3>
+            </div>
+            <div class="menus">
+                <div class="menu-cols">
+                    <a href="#">Cricket</a>
+                </div>
+                <div class="menu-cols">
+                    <a href="#">Badminton</a>
+                </div>
+                <div class="menu-cols">
+                    <a href="#">Cycling</a> 
+                </div>
+                <div class="menu-cols">
+                    <a href="#">Football</a>
+                </div>
+                <div class="menu-cols">
+                    <a href="#">Running</a>
+                </div>
+                <div class="menu-cols">
+                    <a href="#">Camping & Hiking</a>
+                </div>
+                <div class="menu-cols">
+                    <a href="#">Fitness Accessories</a>
+                </div>
+                <div class="menu-cols">
+                    <a href="#">Yoga</a>
+                </div>
+                <div class="menu-cols">
+                    <a href="#">Strength Training</a>
+                </div>
+                <div class="menu-cols">
+                    <a href="#">Cardio Equipment</a>
+                </div>
+                <div class="menu-cols">
+                    <a href="#">Sports Collectibles</a>
+                </div>
+                <div class="menu-cols">
+                    <a href="#">Refurbished & Open Box</a>
+                </div>
+                <div class="menu-cols">
+                    <a href="#">All Exercise & Fitness</a>
+                </div>
+                <div class="menu-cols">
+                    <a href="#">All Sports, Fitness & Outdoors</a>
+                </div>
+            </div>
+           
+            <div class="menu-line-bar">
+                <div class="menu-line"></div>
+            </div>
+            <div class="heading">
+                <h3>Bags & Luggage</h3>
+            </div>
+            <div class="menus">
+                <div class="menu-cols">
+                    <a href="#">Backpacks</a>
+                </div>
+                <div class="menu-cols">
+                    <a href="#">Rucksacks</a>
+                </div>
+                <div class="menu-cols">
+                    <a href="#">Suitcases & Trolley Bags</a>
+                </div>
+                <div class="menu-cols">
+                    <a href="#">Travel Duffles</a>
+                </div>
+                <div class="menu-cols">
+                    <a href="#">Travel Accessories</a>
+                </div>
+                <div class="menu-cols">
+                    <a href="#">wallets</a>
+                </div>
+            </div>
+        </div>
+        
+        <!-- -----------Toys, Baby Products, Kids' Fashion--------- -->
+        <div class="main-menu" id="main-menu8">
+            <div class="back-to-menu">
+                <h4><i class="fa-solid fa-arrow-left"></i> Main Menu</h4>
+            </div>
+
+            <div class="menu-line-bar">
+                <div class="menu-line"></div>
+            </div>
+            <div class="heading">
+                <h3>Toys & Baby Products</h3>
+            </div>
+            <div class="menus">
+                <div class="menu-cols">
+                    <a href="#">Toys & Games</a>
+                </div>
+                <div class="menu-cols">
+                    <a href="#">Baby Products</a>
+                </div>
+                <div class="menu-cols">
+                    <a href="#">Diapers</a> 
+                </div>
+                <div class="menu-cols">
+                    <a href="#">Toys Gifting Store</a>
+                </div>
+                <div class="menu-cols">
+                    <a href="#">STEM Toys Store</a>
+                </div>
+                <div class="menu-cols">
+                    <a href="#">International Toy Store</a>
+                </div>
+                <div class="menu-cols">
+                    <a href="#">Baby Bath, Skin & Grooming</a>
+                </div>
+                <div class="menu-cols">
+                    <a href="#">Strollers & Feeding</a>
+                </div>
+                <div class="menu-cols">
+                    <a href="#">Pantry</a>
+                </div>
+           </div>
+           
+            <div class="menu-line-bar">
+                <div class="menu-line"></div>
+            </div>
+            <div class="heading">
+                <h3>Kids' Fashion</h3>
+            </div>
+            <div class="menus">
+                <div class="menu-cols">
+                    <a href="#">Kids' Clothing</a>
+                </div>
+                <div class="menu-cols">
+                    <a href="#">Kids' Shoes</a>
+                </div>
+                <div class="menu-cols">
+                    <a href="#">School Bags</a>
+                </div>
+                <div class="menu-cols">
+                    <a href="#">Kids's Watches</a>
+                </div>
+                <div class="menu-cols">
+                    <a href="#">Kids' Fashion</a>
+                </div>
+                <div class="menu-cols">
+                    <a href="#">Baby Fashion</a>
+                </div>
+            </div>
+        </div>
+        
+        <!-- -----------Car & Motorbike--------- -->
+        <div class="main-menu" id="main-menu9">
+            <div class="back-to-menu">
+                <h4><i class="fa-solid fa-arrow-left"></i> Main Menu</h4>
+            </div>
+
+            <div class="menu-line-bar">
+                <div class="menu-line"></div>
+            </div>
+            <div class="heading">
+                <h3>Car & Motorbike</h3>
+            </div>
+            <div class="menus">
+                <div class="menu-cols">
+                    <a href="#">Motorbike Accessories & Parts</a>
+                </div>
+                <div class="menu-cols">
+                    <a href="#">Car Accessories</a>
+                </div>
+                <div class="menu-cols">
+                    <a href="#">Car Electronics</a> 
+                </div>
+                <div class="menu-cols">
+                    <a href="#">Car Parts</a>
+                </div>
+                <div class="menu-cols">
+                    <a href="#">Car & Bike Care</a>
+                </div>
+                <div class="menu-cols">
+                    <a href="#">All Car & Motorbike Products</a>
+                </div>
+           </div>
+        </div>
+        
+        <!-- -----------Books--------- -->
+        <div class="main-menu" id="main-menu10">
+            <div class="back-to-menu">
+                <h4><i class="fa-solid fa-arrow-left"></i> Main Menu</h4>
+            </div>
+
+            <div class="menu-line-bar">
+                <div class="menu-line"></div>
+            </div>
+            <div class="heading">
+                <h3>Books</h3>
+            </div>
+            <div class="menus">
+                <div class="menu-cols">
+                    <a href="#">All Books</a>
+                </div>
+                <div class="menu-cols">
+                    <a href="#">Fiction Books</a>
+                </div>
+                <div class="menu-cols">
+                    <a href="#">Editor's Corner</a> 
+                </div>
+                <div class="menu-cols">
+                    <a href="#">School Textbooks</a>
+                </div>
+                <div class="menu-cols">
+                    <a href="#">Children's Books</a>
+                </div>
+                <div class="menu-cols">
+                    <a href="#">Exam Centeral</a>
+                </div>
+                <div class="menu-cols">
+                    <a href="#">Textbooks</a>
+                </div>
+                <div class="menu-cols">
+                    <a href="#">Indian Language Books</a>
+                </div>
+           </div>
+           
+            <div class="menu-line-bar">
+                <div class="menu-line"></div>
+            </div>
+            <div class="heading">
+                <h3>Audible Audiobooks</h3>
+            </div>
+            <div class="menus">
+                <div class="menu-cols">
+                    <a href="#">Audible Audiobooks & more</a>
+                </div>
+            </div>
+        </div>
+
+        <!-- -----------Video Games--------- -->
+        <div class="main-menu" id="main-menu11">
+            <div class="back-to-menu">
+                <h4><i class="fa-solid fa-arrow-left"></i> Main Menu</h4>
+            </div>
+
+            <div class="menu-line-bar">
+                <div class="menu-line"></div>
+            </div>
+            <div class="heading">
+                <h3>Video Games</h3>
+            </div>
+            <div class="menus">
+                <div class="menu-cols">
+                    <a href="#">Gaming Consoles</a>
+                </div>
+                <div class="menu-cols">
+                    <a href="#">Latest Video Games</a>
+                </div>
+                <div class="menu-cols">
+                    <a href="#">PC Games</a> 
+                </div>
+                <div class="menu-cols">
+                    <a href="#">Video Games Deals</a>
+                </div>
+                <div class="menu-cols">
+                    <a href="#">All Video Games</a>
+                </div>
+            </div>
+        </div>
+    </div>    
+    
+
+<!-- ----------------------------------Row-1-------------------------------- -->
+    <section class="home">
+       <div class="text">
+            <p>Get flat 10% Cashback<p>
+            <h1>Exciting Deals <br>on Gaming Laptops.</h1>
+            <p>Lorem ipsum dolor sit amet.</p>
+            <a href="#" class="btn">Shop Now</a>
+       </div>
+       <img src="images/img4.png" alt="">
+    </section>
+
+    <section class="products-page">
+        <div class="icons">
+            <img src="images/svg1.svg" alt="">
+            <div class="text-icon">
+                <p>Free Shipping</p>
+                <span>On all orders over $75.00</span>
+            </div>
+        </div>
+        <div class="icons">
+            <img src="images/svg2.svg" alt="">
+            <div class="text-icon">
+                <p>Friendly Support</p>
+                <span>Team always ready for you</span>
+            </div>
+        </div>
+        <div class="icons">
+            <img src="images/svg3.svg" alt="">
+            <div class="text-icon">
+                <p>Money Back</p>
+                <span>30 days money back guarantee</span>
+            </div>
+        </div>
+        <div class="icons">
+            <img src="images/svg4.svg" alt="">
+            <div class="text-icon">
+                <p>Free Delivery</p>
+                <span>On all orders over $75.00</span>
+            </div>
+        </div>
+        
+    </section>
+    <!-- -------------------------------Row-2------------------------------ -->
+    <section class="products-box">
+        <div class="Cards">
+            <h4>Best of Smart Phone</h4>
+           <div class="card-container">
+                <div class="cards-box">
+                    <div class="img-box">
+                        <a href="#"><img src="images/phone 1.jpg" alt=""></a>
+                    </div>
+                    <div class="text-box">
+                        <p>$1,099.99</p>
+                    </div>
+                </div>
+
+                <div class="cards-box">
+                    <div class="img-box">
+                        <a href="#"><img src="images/phone 2.jpg" alt=""></a>
+                    </div>
+                    <div class="text-box">
+                        <p>$1,099.99</p>
+                    </div>
+                </div>
+           </div>
+
+           <div class="card-container">
+                <div class="cards-box">
+                    <div class="img-box">
+                        <a href="#"><img src="images/phone 3.jpg" alt=""></a>
+                    </div>
+                    <div class="text-box">
+                        <p>$1,099.99</p>
+                    </div>
+                </div>
+
+                <div class="cards-box">
+                    <div class="img-box">
+                        <a href="#"><img src="images/phone 4.jpg" alt=""></a>
+                    </div>
+                    <div class="text-box">
+                        <p>$1,099.99</p>
+                    </div>
+                </div>
+           </div>
+           <div class="card-btn">
+            <a href="#">Explore More...</a>
+           </div>
+        </div>
+
+        <div class="Cards">
+            <h4>Best of Electronics</h4>
+           <div class="card-container">
+                <div class="cards-box">
+                    <div class="img-box">
+                        <a href="#"><img src="images/best-etc-1.jpg" alt=""></a>
+                    </div>
+                    <div class="text-box">
+                        <p>$1,099.99</p>
+                    </div>
+                </div>
+
+                <div class="cards-box">
+                    <div class="img-box">
+                        <a href="#"><img src="images/best-etc-2.jpg" alt=""></a>
+                    </div>
+                    <div class="text-box">
+                        <p>$1,099.99</p>
+                    </div>
+                </div>
+           </div>
+           <div class="card-container">
+                <div class="cards-box">
+                    <div class="img-box">
+                        <a href="#"><img src="images/best-etc-3.jpg" alt=""></a>
+                    </div>
+                    <div class="text-box">
+                        <p>$1,099.99</p>
+                    </div>
+                </div>
+
+                <div class="cards-box">
+                    <div class="img-box">
+                        <a href="#"><img src="images/best-etc-4.jpg" alt=""></a>
+                    </div>
+                    <div class="text-box">
+                        <p>$1,099.99</p>
+                    </div>
+                </div>
+           </div>
+           <div class="card-btn">
+            <a href="#">Explore More...</a>
+           </div>
+        </div>
+
+        <div class="Cards">
+            <h4>Best of deals</h4>
+           <div class="card-container">
+                <div class="cards-box">
+                    <div class="img-box">
+                        <a href="#"><img src="images/product 1.webp" alt=""></a>
+                    </div>
+                    <div class="text-box">
+                        <p>$1,099.99</p>
+                    </div>
+                </div>
+
+                <div class="cards-box">
+                    <div class="img-box">
+                        <a href="#"><img src="images/product 2.webp" alt=""></a>
+                    </div>
+                    <div class="text-box">
+                        <p>$1,099.99</p>
+                    </div>
+                </div>
+           </div>
+           <div class="card-container">
+                <div class="cards-box">
+                    <div class="img-box">
+                        <a href="#"><img src="images/product 3.webp" alt=""></a>
+                    </div>
+                    <div class="text-box">
+                        <p>$1,099.99</p>
+                    </div>
+                </div>
+
+                <div class="cards-box">
+                    <div class="img-box">
+                        <a href="#"><img src="images/product 4.jpg" alt=""></a>
+                    </div>
+                    <div class="text-box">
+                        <p>$1,099.99</p>
+                    </div>
+                </div>
+           </div>
+           <div class="card-btn">
+            <a href="#">Explore More...</a>
+           </div>
+        </div>
+
+        <div class="Cards">
+            <h4>Best of Fashion</h4>
+           <div class="card-container">
+                <div class="cards-box">
+                    <div class="img-box">
+                        <a href="#"><img src="images/fashion 1.jpg" alt=""></a>
+                    </div>
+                    <div class="text-box">
+                        <p>$1,099.99</p>
+                    </div>
+                </div>
+
+                <div class="cards-box">
+                    <div class="img-box">
+                        <a href="#"><img src="images/fashion 2.jpg" alt=""></a>
+                    </div>
+                    <div class="text-box">
+                        <p>$1,099.99</p>
+                    </div>
+                </div>
+           </div>
+           <div class="card-container">
+                <div class="cards-box">
+                    <div class="img-box">
+                        <a href="#"><img src="images/fashion 3.jpg" alt=""></a>
+                    </div>
+                    <div class="text-box">
+                        <p>$1,099.99</p>
+                    </div>
+                </div>
+
+                <div class="cards-box">
+                    <div class="img-box">
+                        <a href="#"><img src="images/fashion 4.jpg" alt=""></a>
+                    </div>
+                    <div class="text-box">
+                        <p>$1,099.99</p>
+                    </div>
+                </div>
+           </div>
+           <div class="card-btn">
+            <a href="#">Explore More...</a>
+           </div>
+        </div>
+    </section>
+<!-- -----------------------------------------Row-3-------------------------------- -->
+    <section class="cards-box2">
+        <div class="card-outer-container">
+            <div class="card-box2-text">
+                <p>Related to items you've viewed <a href="#">See More...</a></p> 
+                <div class="card-box2-icon">
+                    <i class="fa-solid fa-angle-left" id="backBtn"></i>
+                    <i class="fa-solid fa-angle-right" id="nextBtn"></i>
+                </div>
+            </div>
+            <div class="gallery-card">
+                <div class="gallery-card-img">
+                    <a href="#"><img src="images/phone 1.jpg" alt=""></a>
+                    <a href="#"><img src="images/phone 2.jpg" alt=""></a>
+                    <a href="#"><img src="images/phone 3.jpg" alt=""></a>
+                    <a href="#"><img src="images/phone 4.jpg" alt=""></a>
+                    <a href="#"><img src="images/phone 5.jpg" alt=""></a>
+                    <a href="#"><img src="images/phone 6.jpg" alt=""></a>
+                    <a href="#"><img src="images/phone 7.jpg" alt=""></a>
+                    <a href="#"><img src="images/phone 8.jpg" alt=""></a>
+                    <a href="#"><img src="images/phone 9.png" alt=""></a>
+                    <a href="#"><img src="images/phone 10.jpg" alt=""></a>
+                    <a href="#"><img src="images/phone 11.jpg" alt=""></a>
+                    <a href="#"><img src="images/phone 12.jpg" alt=""></a>
+                    <a href="#"><img src="images/phone 13.jpg" alt=""></a>
+                    <a href="#"><img src="images/phone 14.jpg" alt=""></a>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+<!-- -----------------------------------Row-4-------------------------------------- -->
+    <section class="Cards1">
+        <div class="cards-box1">
+            <div class="card-text">
+                <p>Up to 12 Hours Playback</p>
+                <h2>Mobile Speakers from <br><i class="fa-solid fa-indian-rupee-sign"></i>699</h2>
+                <div class="speakers-buy">
+                    <a href="#">Shop Now <i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                </div>
+            </div>
+            <div class="mobile-speakers">
+                <img src="images/Mobile-speaker.png" alt="">
+            </div>
+        </div>
+
+        <div class="cards-box1">
+            <div class="card-text">
+                <p>User Experience & Lifestyle</p>
+                <h2>Home Theatres from <br><i class="fa-solid fa-indian-rupee-sign"></i>3,999</h2>
+                <div class="speakers-buy">
+                    <a href="#">Shop Now <i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                </div>
+            </div>
+            <div class="mobile-speakers">
+                <img src="images/Home-theatres.png" alt="">
+            </div>
+        </div>
+
+        <div class="cards-box1">
+            <div class="card-text">
+                <p>Exchange Up to <i class="fa-solid fa-indian-rupee-sign"></i>6,500 0ff</p>
+                <h2>Sony PS5 Consoles from <br><i class="fa-solid fa-indian-rupee-sign"></i>44,990</h2>
+                <div class="speakers-buy">
+                    <a href="#">Shop Now <i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                </div>
+            </div>
+            <div class="mobile-speakers">
+                <img src="images/PS5.png" alt="">
+            </div>
+        </div>
+    </section>
+
+
+<!-- -------------------------------------Row-5------------------------------------ -->
+    <section class="cards-box2">
+        <div class="card-outer-container">
+            <div class="card-box2-text">
+                <p>Continue Shopping for <a href="#">See More...</a></p> 
+                <div class="card-box2-icon">
+                    <i class="fa-solid fa-angle-left" id="backBtn"></i>
+                    <i class="fa-solid fa-angle-right" id="nextBtn"></i>
+                </div>
+            </div>
+            <div class="gallery-card">
+                <div class="gallery-card-img">
+                    <a href="#"><img src="images/best-etc-1.jpg" alt=""></a>
+                    <a href="#"><img src="images/best-etc-2.jpg" alt=""></a>
+                    <a href="#"><img src="images/best-etc-3.jpg" alt=""></a>
+                    <a href="#"><img src="images/best-etc-4.jpg" alt=""></a>
+                    <a href="#"><img src="images/Home-theatres.png" alt=""></a>
+                    <a href="#"><img src="images/Mobile-speaker.png" alt=""></a>
+                    <a href="#"><img src="images/phone 1.jpg" alt=""></a>
+                    <a href="#"><img src="images/phone 10.jpg" alt=""></a>
+                    <a href="#"><img src="images/product 3.webp" alt=""></a>
+                    <a href="#"><img src="images/fashion 3.jpg" alt=""></a>
+                    <a href="#"><img src="images/phone 11.jpg" alt=""></a>
+                    <a href="#"><img src="images/product 2.webp" alt=""></a>
+                    <a href="#"><img src="images/fashion 2.jpg" alt=""></a>
+                    <a href="#"><img src="images/product 1.webp" alt=""></a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+<!-- -------------------------------------Row-6------------------------------------ -->
+    <section class="new-cards">
+        <div class="card-rows">
+            <div class="card-row1">
+                <a href="#"><img src="images/size_k.jpg" alt=""></a>
+            </div>
+            
+            <div class="card-row2">
+                <div class="row2-text">
+                    <p>Deals related to your views <a href="#">See All</a></p>
+                </div>
+                <div class="row2-products">
+                    <a href="#"><img src="images/product 1.webp" alt=""></a>
+                    <a href="#"><img src="images/product 2.webp" alt=""></a>
+                    <a href="#"><img src="images/best-etc-3.jpg" alt=""></a>
+                    <a href="#"><img src="images/best-etc-2.jpg" alt=""></a>
+                </div>
+            </div>
+
+            <div class="card-row3">
+                <div class="row3-text">
+                    <p>Deals on keyboard, mouse & more <a href="#">See All</a></p>
+                </div>
+                <div class="row3-products">
+                    <div class="product">
+                        <a href="#"><img src="images/keyboards-removebg.png" alt=""></a>
+                        <p>Keyboards Starting ₹349 | Keyboards</p>
+                    </div>
+                    <div class="product">
+                        <a href="#"><img src="images/mouse-removebg.png" alt=""></a>
+                        <p>Starting ₹199 | Mice</p>
+                    </div>
+                    <div class="product">
+                        <a href="#"><img src="images/headphons-removebg.png" alt=""></a>
+                        <p>Starting ₹499 | headphones</p>
+                    </div>
+                    <div class="product">
+                        <a href="#"><img src="images/gaming-removebg.png" alt=""></a>
+                        <p>Starting ₹399 | Gaming accessories</p>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </section>
+
+<!-- -------------------------------------Row-7------------------------------------ -->
+<section class="Cards2">
+    <div class="card-2k">
+        <div class="card-2-k-text">
+            <p>New Arrivals Dropping Daily <a href="#">See More...</a></p>
+            <div class="card-box2-icon">
+                <i class="fa-solid fa-angle-left" id="backBtn"></i>
+                <i class="fa-solid fa-angle-right" id="nextBtn"></i>
+            </div>
+        </div>
+        <div class="Card-2-k">
+            <div class="Card-2-box-img">
+                <a href="#"><img src="images/ak.webp" alt=""></a>
+            </div>
+    
+            <div class="Card-ga-outerBox">
+                
+                <div class="Cards2-gallerys">
+                    <div class="Cards2-ga">
+                        <div class="gallery-k">
+                            <img src="images/Row-7/1.png" alt="">
+                            <div class="caption">
+                                <p>Philips HP8100/46 Compact Hair Dryer| 2 Flexible...</p>
+                                <div class="discount-text">
+                                    <div class="dis-text">
+                                        <span>50% Off</span><p>Limited time deal</p>
+                                    </div>
+                                    <h6><i class="fa-solid fa-indian-rupee-sign"></i>699 <span><i class="fa-solid fa-indian-rupee-sign"></i>1,095.00</span></h6>
+                                </div>
+                                <div class="cp-btn">
+                                    <a href="#">Buy Now <i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="gallery-k">
+                            <img src="images/Row-7/2.png" alt="">
+                            <div class="caption">
+                                <p>Beardo I Blade Trimmer for men | No Nicks and...</p>
+                                <div class="discount-text">
+                                    <div class="dis-text">
+                                        <span>50% Off</span><p>Limited time deal</p>
+                                    </div>
+                                    <h6><i class="fa-solid fa-indian-rupee-sign"></i>969 <span><i class="fa-solid fa-indian-rupee-sign"></i>1,499.00</span></h6>
+                                </div>
+                                <div class="cp-btn">
+                                    <a href="#">Buy Now <i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="gallery-k">
+                            <img src="images/Row-7/3.png" alt="">
+                            <div class="caption">
+                                <p>Oral B Cross Action Battery Powered Toothbrush</p>
+                                <div class="discount-text">
+                                    <div class="dis-text">
+                                        <span>50% Off</span><p>Limited time deal</p>
+                                    </div>
+                                    <h6><i class="fa-solid fa-indian-rupee-sign"></i>945 <span><i class="fa-solid fa-indian-rupee-sign"></i>999.00</span></h6>
+                                </div>
+                                <div class="cp-btn">
+                                    <a href="#">Buy Now <i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="gallery-k">
+                            <img src="images/Row-7/4.png" alt="">
+                            <div class="caption">
+                                <p>mars by GHC Jade Roller & Gua Sha Massager Combo...</p>
+                                <div class="discount-text">
+                                    <div class="dis-text">
+                                        <span>50% Off</span><p>Limited time deal</p>
+                                    </div>
+                                    <h6><i class="fa-solid fa-indian-rupee-sign"></i>299 <span><i class="fa-solid fa-indian-rupee-sign"></i>1,198.00</span></h6>
+                                </div>
+                                <div class="cp-btn">
+                                    <a href="#">Buy Now <i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="gallery-k">
+                            <img src="images/Row-7/5.png" alt="">
+                            <div class="caption">
+                                <p>Park Avenue Good Morning Grooming Collection...</p>
+                                <div class="discount-text">
+                                    <div class="dis-text">
+                                        <span>50% Off</span><p>Limited time deal</p>
+                                    </div>
+                                    <h6><i class="fa-solid fa-indian-rupee-sign"></i>281 <span><i class="fa-solid fa-indian-rupee-sign"></i>625.00</span></h6>
+                                </div>
+                                <div class="cp-btn">
+                                    <a href="#">Buy Now <i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="gallery-k">
+                            <img src="images/Row-7/6.png" alt="">
+                            <div class="caption">
+                                <p>RUDRESHWAR Face Massager Jade Roller & Gua Sha Tool 100%...</p>
+                                <div class="discount-text">
+                                    <div class="dis-text">
+                                        <span>50% Off</span><p>Limited time deal</p>
+                                    </div>
+                                    <h6><i class="fa-solid fa-indian-rupee-sign"></i>698 <span><i class="fa-solid fa-indian-rupee-sign"></i>1,899.00</span></h6>
+                                </div>
+                                <div class="cp-btn">
+                                    <a href="#">Buy Now <i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="gallery-k">
+                            <img src="images/Row-7/7.png" alt="">
+                            <div class="caption">
+                                <p>Beardo Ban the Tan Kit | Grooming kit for men | Detan Facewash...</p>
+                                <div class="discount-text">
+                                    <div class="dis-text">
+                                        <span>50% Off</span><p>Limited time deal</p>
+                                    </div>
+                                    <h6><i class="fa-solid fa-indian-rupee-sign"></i>449 <span><i class="fa-solid fa-indian-rupee-sign"></i>697.00</span></h6>
+                                </div>
+                                <div class="cp-btn">
+                                    <a href="#">Buy Now <i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="gallery-k">
+                            <img src="images/Row-7/8.png" alt="">
+                            <div class="caption">
+                                <p>Bombay Shaving Company Beard Pen Styler Razor for Men...</p>
+                                <div class="discount-text">
+                                    <div class="dis-text">
+                                        <span>50% Off</span><p>Limited time deal</p>
+                                    </div>
+                                    <h6><i class="fa-solid fa-indian-rupee-sign"></i>279 <span><i class="fa-solid fa-indian-rupee-sign"></i>399.00</span></h6>
+                                </div>
+                                <div class="cp-btn">
+                                    <a href="#">Buy Now <i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="gallery-k">
+                            <img src="images/Row-7/9.png" alt="">
+                            <div class="caption">
+                                <p>Beardo Charcoal 4-in-1 Giftset for Men | Complete Face...</p>
+                                <div class="discount-text">
+                                    <div class="dis-text">
+                                        <span>50% Off</span><p>Limited time deal</p>
+                                    </div>
+                                    <h6><i class="fa-solid fa-indian-rupee-sign"></i>508 <span><i class="fa-solid fa-indian-rupee-sign"></i>768.00</span></h6>
+                                </div>
+                                <div class="cp-btn">
+                                    <a href="#">Buy Now <i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="gallery-k">
+                            <img src="images/Row-7/10.png" alt="">
+                            <div class="caption">
+                                <p>Beauté Secrets Professional Manicure Set 15 pcs,Stainless...</p>
+                                <div class="discount-text">
+                                    <div class="dis-text">
+                                        <span>50% Off</span><p>Limited time deal</p>
+                                    </div>
+                                    <h6><i class="fa-solid fa-indian-rupee-sign"></i>499 <span><i class="fa-solid fa-indian-rupee-sign"></i>528.00</span></h6>
+                                </div>
+                                <div class="cp-btn">
+                                    <a href="#">Buy Now <i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="gallery-k">
+                            <img src="images/Row-7/11.png" alt="">
+                            <div class="caption">
+                                <p>Bombay Shaving Company | Beard Grooming Kit for Men...</p>
+                                <div class="discount-text">
+                                    <div class="dis-text">
+                                        <span>50% Off</span><p>Limited time deal</p>
+                                    </div>
+                                    <h6><i class="fa-solid fa-indian-rupee-sign"></i>749 <span><i class="fa-solid fa-indian-rupee-sign"></i>1,599.00</span></h6>
+                                </div>
+                                <div class="cp-btn">
+                                    <a href="#">Buy Now <i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="gallery-k">
+                            <img src="images/Row-7/12.png" alt="">
+                            <div class="caption">
+                                <p>Caresmith Bloom Rechargeable Callus Remover for Feet...</p>
+                                <div class="discount-text">
+                                    <div class="dis-text">
+                                        <span>50% Off</span><p>Limited time deal</p>
+                                    </div>
+                                    <h6><i class="fa-solid fa-indian-rupee-sign"></i>699 <span><i class="fa-solid fa-indian-rupee-sign"></i>2,000.00</span></h6>
+                                </div>
+                                <div class="cp-btn">
+                                    <a href="#">Buy Now <i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="gallery-k">
+                            <img src="images/Row-7/13.png" alt="">
+                            <div class="caption">
+                                <p>Milagro Beauty Super Lustrous Face Roller Volcanic...</p>
+                                <div class="discount-text">
+                                    <div class="dis-text">
+                                        <span>50% Off</span><p>Limited time deal</p>
+                                    </div>
+                                    <h6><i class="fa-solid fa-indian-rupee-sign"></i>579 <span><i class="fa-solid fa-indian-rupee-sign"></i>890.00</span></h6>
+                                </div>
+                                <div class="cp-btn">
+                                    <a href="#">Buy Now <i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="gallery-k">
+                            <img src="images/Row-7/14.png" alt="">
+                            <div class="caption">
+                                <p>Winston Callus Remover for Feet Electronic Foot...</p>
+                                <div class="discount-text">
+                                    <div class="dis-text">
+                                        <span>50% Off</span><p>Limited time deal</p>
+                                    </div>
+                                    <h6><i class="fa-solid fa-indian-rupee-sign"></i>999 <span><i class="fa-solid fa-indian-rupee-sign"></i>2,090.00</span></h6>
+                                </div>
+                                <div class="cp-btn">
+                                    <a href="#">Buy Now <i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- -------------------------------------Row-8------------------------------------ -->
+<section class="products-box-1">
+    <div class="Cards3">
+        <h4>More items to consider</h4>
+        <div class="product-item">
+            <div class="product-item-img">
+                <a href="#"><img src="images/Row-8/img1.jpg" alt="" class="img2"></a>
+            </div>
+            <div class="product-caption">
+                <p>Beauté Secrets Luxury Manicure Set, Nail Clippers Set, Gifts for Men/Women, Professional Pedicure Kit Nail...</p>
+                <h6><i class="fa-solid fa-indian-rupee-sign"></i>749 <span>M.R.P: <i class="fa-solid fa-indian-rupee-sign"></i>528.00</span></h6>
+            </div>
+        </div>
+        <a href="#" class="btn btn-primary">See More</a>
+    </div>
+
+    <div class="Cards3">
+        <h4>Customers’ Most-Loved products</h4>
+        <div class="product-item item1">
+            <div class="product-item-img">
+                <a href="#"><img src="images/Row-8/jug4.jpg" alt="" class="img4"></a>
+                <a href="#"><img src="images/Row-8/jug1.jpg" alt="" class="img4"></a>
+                <a href="#"><img src="images/Row-8/jug2.jpg" alt="" class="img4"></a>
+                <a href="#"><img src="images/Row-8/jug3.jpg" alt="" class="img4"></a>
+            </div>
+        </div>
+        <a href="#" class="btn btn-primary">See More</a>
+    </div>
+
+    <div class="Cards3">
+        <h4>More items to consider</h4>
+        <div class="product-item">
+            <div class="product-item-img">
+                <a href="#"><img src="images/Row-8/img2.jpg" alt="" class="img2"></a>
+            </div>
+            <div class="product-caption">
+                <p>Beauté Secrets Luxury Manicure Set, Nail Clippers Set, Gifts for Men/Women, Professional Pedicure Kit Nail...</p>
+                <h6><i class="fa-solid fa-indian-rupee-sign"></i>749 <span>M.R.P: <i class="fa-solid fa-indian-rupee-sign"></i>528.00</span></h6>
+            </div>
+        </div>
+        <a href="#" class="btn btn-primary">See More</a>
+    </div>
+
+    <div class="Cards3">
+        <h4>Up to 75% off | Party dresses from Small...</h4>
+        <div class="product-item">
+            <div class="product-item-img">
+                <a href="#"><img src="images/Row-8/women-cloths-img1.jpeg" alt="" class="img3"></a>
+            </div>
+        </div>
+        <a href="#" class="btn btn-primary">See More</a>
+    </div>
+</section>
+
+<!-- -------------------------------------Row-9------------------------------------ -->
+<section class="cards-box2">
+    <div class="card-outer-container">
+        <div class="card-box2-text">
+            <p>Keep shopping for <a href="#">See More...</a></p> 
+            <div class="card-box2-icon">
+                <i class="fa-solid fa-angle-left" id="backBtn"></i>
+                <i class="fa-solid fa-angle-right" id="nextBtn"></i>
+            </div>
+        </div>
+        <div class="gallery-card">
+            <div class="gallery-card-img">
+                <a href="#"><img src="images/Row-9/Book-1.jpg" alt=""></a>
+                <a href="#"><img src="images/Row-9/Book-2.jpg" alt=""></a>
+                <a href="#"><img src="images/Row-9/Book-3.jpg" alt=""></a>
+                <a href="#"><img src="images/Row-9/Book-4.jpg" alt=""></a>
+                <a href="#"><img src="images/Row-9/Book-5.jpg" alt=""></a>
+                <a href="#"><img src="images/Row-9/Book-6.jpg" alt=""></a>
+                <a href="#"><img src="images/Row-9/Book-7.jpg" alt=""></a>
+                <a href="#"><img src="images/Row-9/Book-8.jpg" alt=""></a>
+                <a href="#"><img src="images/Row-9/Book-9.jpg" alt=""></a>
+                <a href="#"><img src="images/Row-9/Book-10.jpg" alt=""></a>
+                <a href="#"><img src="images/Row-9/Book-11.jpg" alt=""></a>
+                <a href="#"><img src="images/Row-9/Book-12.jpg" alt=""></a>
+                <a href="#"><img src="images/Row-9/Book-13.jpg" alt=""></a>
+                <a href="#"><img src="images/Row-9/Book-14.jpg" alt=""></a>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- -------------------------------------Row-10------------------------------------ -->
+<section class="Cards2">
+    <div class="card-2k">
+        <div class="card-2-k-text">
+            <p>Inspired by your browsing history <a href="#">See More...</a></p>
+            <div class="card-box2-icon">
+                <i class="fa-solid fa-angle-left" id="backBtn"></i>
+                <i class="fa-solid fa-angle-right" id="nextBtn"></i>
+            </div>
+        </div>
+        <div class="Card-2-k">
+            <div class="Card-ga-outerBox">
+                <div class="Cards2-gallerys">
+                    <div class="Cards2-ga">
+                        <div class="gallery-k">
+                            <img src="images/Row-7/1.png" alt="">
+                            <div class="caption">
+                                <p>Philips HP8100/46 Compact Hair Dryer| 2 Flexible...</p>
+                                <div class="discount-text">
+                                    <div class="dis-text">
+                                        <span>50% Off</span><p>Limited time deal</p>
+                                    </div>
+                                    <h6><i class="fa-solid fa-indian-rupee-sign"></i>699 <span><i class="fa-solid fa-indian-rupee-sign"></i>1,095.00</span></h6>
+                                </div>
+                                <div class="cp-btn">
+                                    <a href="#">Buy Now <i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="gallery-k">
+                            <img src="images/Row-7/2.png" alt="">
+                            <div class="caption">
+                                <p>Beardo I Blade Trimmer for men | No Nicks and...</p>
+                                <div class="discount-text">
+                                    <div class="dis-text">
+                                        <span>50% Off</span><p>Limited time deal</p>
+                                    </div>
+                                    <h6><i class="fa-solid fa-indian-rupee-sign"></i>969 <span><i class="fa-solid fa-indian-rupee-sign"></i>1,499.00</span></h6>
+                                </div>
+                                <div class="cp-btn">
+                                    <a href="#">Buy Now <i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="gallery-k">
+                            <img src="images/Row-7/3.png" alt="">
+                            <div class="caption">
+                                <p>Oral B Cross Action Battery Powered Toothbrush</p>
+                                <div class="discount-text">
+                                    <div class="dis-text">
+                                        <span>50% Off</span><p>Limited time deal</p>
+                                    </div>
+                                    <h6><i class="fa-solid fa-indian-rupee-sign"></i>945 <span><i class="fa-solid fa-indian-rupee-sign"></i>999.00</span></h6>
+                                </div>
+                                <div class="cp-btn">
+                                    <a href="#">Buy Now <i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="gallery-k">
+                            <img src="images/Row-7/4.png" alt="">
+                            <div class="caption">
+                                <p>mars by GHC Jade Roller & Gua Sha Massager Combo...</p>
+                                <div class="discount-text">
+                                    <div class="dis-text">
+                                        <span>50% Off</span><p>Limited time deal</p>
+                                    </div>
+                                    <h6><i class="fa-solid fa-indian-rupee-sign"></i>299 <span><i class="fa-solid fa-indian-rupee-sign"></i>1,198.00</span></h6>
+                                </div>
+                                <div class="cp-btn">
+                                    <a href="#">Buy Now <i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="gallery-k">
+                            <img src="images/Row-7/5.png" alt="">
+                            <div class="caption">
+                                <p>Park Avenue Good Morning Grooming Collection...</p>
+                                <div class="discount-text">
+                                    <div class="dis-text">
+                                        <span>50% Off</span><p>Limited time deal</p>
+                                    </div>
+                                    <h6><i class="fa-solid fa-indian-rupee-sign"></i>281 <span><i class="fa-solid fa-indian-rupee-sign"></i>625.00</span></h6>
+                                </div>
+                                <div class="cp-btn">
+                                    <a href="#">Buy Now <i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="gallery-k">
+                            <img src="images/Row-7/6.png" alt="">
+                            <div class="caption">
+                                <p>RUDRESHWAR Face Massager Jade Roller & Gua Sha Tool 100%...</p>
+                                <div class="discount-text">
+                                    <div class="dis-text">
+                                        <span>50% Off</span><p>Limited time deal</p>
+                                    </div>
+                                    <h6><i class="fa-solid fa-indian-rupee-sign"></i>698 <span><i class="fa-solid fa-indian-rupee-sign"></i>1,899.00</span></h6>
+                                </div>
+                                <div class="cp-btn">
+                                    <a href="#">Buy Now <i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="gallery-k">
+                            <img src="images/Row-7/7.png" alt="">
+                            <div class="caption">
+                                <p>Beardo Ban the Tan Kit | Grooming kit for men | Detan Facewash...</p>
+                                <div class="discount-text">
+                                    <div class="dis-text">
+                                        <span>50% Off</span><p>Limited time deal</p>
+                                    </div>
+                                    <h6><i class="fa-solid fa-indian-rupee-sign"></i>449 <span><i class="fa-solid fa-indian-rupee-sign"></i>697.00</span></h6>
+                                </div>
+                                <div class="cp-btn">
+                                    <a href="#">Buy Now <i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="gallery-k">
+                            <img src="images/Row-7/8.png" alt="">
+                            <div class="caption">
+                                <p>Bombay Shaving Company Beard Pen Styler Razor for Men...</p>
+                                <div class="discount-text">
+                                    <div class="dis-text">
+                                        <span>50% Off</span><p>Limited time deal</p>
+                                    </div>
+                                    <h6><i class="fa-solid fa-indian-rupee-sign"></i>279 <span><i class="fa-solid fa-indian-rupee-sign"></i>399.00</span></h6>
+                                </div>
+                                <div class="cp-btn">
+                                    <a href="#">Buy Now <i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="gallery-k">
+                            <img src="images/Row-7/9.png" alt="">
+                            <div class="caption">
+                                <p>Beardo Charcoal 4-in-1 Giftset for Men | Complete Face...</p>
+                                <div class="discount-text">
+                                    <div class="dis-text">
+                                        <span>50% Off</span><p>Limited time deal</p>
+                                    </div>
+                                    <h6><i class="fa-solid fa-indian-rupee-sign"></i>508 <span><i class="fa-solid fa-indian-rupee-sign"></i>768.00</span></h6>
+                                </div>
+                                <div class="cp-btn">
+                                    <a href="#">Buy Now <i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="gallery-k">
+                            <img src="images/Row-7/10.png" alt="">
+                            <div class="caption">
+                                <p>Beauté Secrets Professional Manicure Set 15 pcs,Stainless...</p>
+                                <div class="discount-text">
+                                    <div class="dis-text">
+                                        <span>50% Off</span><p>Limited time deal</p>
+                                    </div>
+                                    <h6><i class="fa-solid fa-indian-rupee-sign"></i>499 <span><i class="fa-solid fa-indian-rupee-sign"></i>528.00</span></h6>
+                                </div>
+                                <div class="cp-btn">
+                                    <a href="#">Buy Now <i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="gallery-k">
+                            <img src="images/Row-7/11.png" alt="">
+                            <div class="caption">
+                                <p>Bombay Shaving Company | Beard Grooming Kit for Men...</p>
+                                <div class="discount-text">
+                                    <div class="dis-text">
+                                        <span>50% Off</span><p>Limited time deal</p>
+                                    </div>
+                                    <h6><i class="fa-solid fa-indian-rupee-sign"></i>749 <span><i class="fa-solid fa-indian-rupee-sign"></i>1,599.00</span></h6>
+                                </div>
+                                <div class="cp-btn">
+                                    <a href="#">Buy Now <i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="gallery-k">
+                            <img src="images/Row-7/12.png" alt="">
+                            <div class="caption">
+                                <p>Caresmith Bloom Rechargeable Callus Remover for Feet...</p>
+                                <div class="discount-text">
+                                    <div class="dis-text">
+                                        <span>50% Off</span><p>Limited time deal</p>
+                                    </div>
+                                    <h6><i class="fa-solid fa-indian-rupee-sign"></i>699 <span><i class="fa-solid fa-indian-rupee-sign"></i>2,000.00</span></h6>
+                                </div>
+                                <div class="cp-btn">
+                                    <a href="#">Buy Now <i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="gallery-k">
+                            <img src="images/Row-7/13.png" alt="">
+                            <div class="caption">
+                                <p>Milagro Beauty Super Lustrous Face Roller Volcanic...</p>
+                                <div class="discount-text">
+                                    <div class="dis-text">
+                                        <span>50% Off</span><p>Limited time deal</p>
+                                    </div>
+                                    <h6><i class="fa-solid fa-indian-rupee-sign"></i>579 <span><i class="fa-solid fa-indian-rupee-sign"></i>890.00</span></h6>
+                                </div>
+                                <div class="cp-btn">
+                                    <a href="#">Buy Now <i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="gallery-k">
+                            <img src="images/Row-7/14.png" alt="">
+                            <div class="caption">
+                                <p>Winston Callus Remover for Feet Electronic Foot...</p>
+                                <div class="discount-text">
+                                    <div class="dis-text">
+                                        <span>50% Off</span><p>Limited time deal</p>
+                                    </div>
+                                    <h6><i class="fa-solid fa-indian-rupee-sign"></i>999 <span><i class="fa-solid fa-indian-rupee-sign"></i>2,090.00</span></h6>
+                                </div>
+                                <div class="cp-btn">
+                                    <a href="#">Buy Now <i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- -------------------------footer------------------------ -->
+<section class="footer">
+    <div class="footer-line"></div>
+    <div class="footer-top">
+        <div class="footer-logo">
+            <a href="index.html"><img src="images/logo-removebg.png" alt=""><span>QuickMart</span></a>
+        </div>
+        <div class="footer-top-icon">
+            <div class="language">
+                <i class="fa-solid fa-globe"></i>
+                <select name="language" id="language">
+                    <option value="English">English</option>
+                    <option value="French">French</option>
+                    <option value="Spanish">Spanish</option>
+                    <option value="Chinese">Chinese</option>
+                </select>
+            </div>
+        </div>
+    </div>
+    
+    <div class="footer-container">
+        <div class="about">
+            <h3>About</h3>
+            <div class="col-1">
+                <a href="#">About Us</a>
+            </div>
+            <div class="col-1">
+                <a href="#">Careers</a>
+            </div>
+            <div class="col-1">
+                <a href="#">Contact Us</a>
+            </div>
+            <div class="col-1">
+                <a href="#">Blog</a>
+            </div>
+        </div>
+
+        <div class="Hellp">
+            <h3>Hellp</h3>
+            <div class="col-1">
+                <a href="#">Payments</a>
+            </div>
+            <div class="col-1">
+                <a href="#">Shipping</a>
+            </div>
+            <div class="col-1">
+                <a href="#">Cancellation & Returns</a>
+            </div>
+            <div class="col-1">
+                <a href="#">FAQ</a>
+            </div>
+        </div>
+
+        <div class="Consumer-Policy">
+            <h3>Consumer Policy</h3>
+            <div class="col-1">
+                <a href="#">Cancellation & Returns</a>
+            </div>
+            <div class="col-1">
+                <a href="#">Terms Of Use</a>
+            </div>
+            <div class="col-1">
+                <a href="#">Security</a>
+            </div>
+            <div class="col-1">
+            <a href="#">Privacy</a>
+            </div>
+        </div>
+
+        <div class="mail">
+            <h3>Mail Us</h3>
+            <p>Lorem ipsum dolor sit amet, <br> consectetur adipisicing elit. <br> Rem veniam aut excepturi illo aliquid. <br> Alias, id tenetur. Dignissimos  <br>  assumenda eveniet,error fugit <br>magni vitae fuga.</p>
+
+            <div class="social-icons">
+                <a href="#"><i class="fab fa-facebook-f"></i></a>
+                <a href="#"><i class="fab fa-twitter"></i></a>
+                <a href="#"><i class="fab fa-instagram"></i></a>
+            </div>
+        </div>
+    </div>
+    
+    <div class="footer-bottom">
+        <div class="footer-bottom-line"></div>
+    </div>
+
+    <div class="copyright">
+        <p>© 2025,QuickMart.in, All rights reserved.</p>
+        <img src="images/payment-method-c454fb.svg" alt="">
+    </div>
+ </section>
+</body>
+</html>
